@@ -1,14 +1,35 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="rgba(0, 0, 0, 0.678)" style="background-color: rgba(0, 0, 0, 0.678)">
     <ion-title>
-      Ionic Blank
+      <b>Alarma de Robo</b>
+      
+      <ion-button color="dark" size="small" class="ion-float-right" [routerLink]="['/login']" (click)="onlogout()">
+        DESCONECTARSE</ion-button>
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+  <div class="divSwitch">
+      <div class="switch">
+          <input type="checkbox" name="toggle">
+          <label for="toggle">
+            <i class="bulb">
+              <span class="bulb-center"></span>
+              <span class="filament-1"></span>
+              <span class="filament-2"></span>
+              <span class="reflections">
+                <span></span>
+              </span>
+              <span class="sparks">
+                <i class="spark1"></i>
+                <i class="spark2"></i>
+                <i class="spark3"></i>
+                <i class="spark4"></i>
+              </span>
+            </i>    
+          </label>
+        </div>
   </div>
+
 </ion-content>
