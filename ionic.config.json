@@ -1,5 +1,7 @@
 {
   "name": "Alarma-de-robo",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
