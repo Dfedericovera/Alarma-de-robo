@@ -1,18 +1,22 @@
 <ion-header>
-  <ion-toolbar color="rgba(0, 0, 0, 0.678)" style="background-color: rgba(0, 0, 0, 0.678)">
+  <ion-toolbar color="rgba(0, 0, 0, 0.678)" style="background-image: linear-gradient(to bottom, #00050d, #00112e, #00184e, #00176b, #320081);">
     <ion-title>
-      <b>Alarma de Robo</b>
-      
+      <b style="color: white;">Alarma de Robo</b>      
       <ion-button color="dark" size="small" class="ion-float-right" [routerLink]="['/login']" ><!-- (click)="onlogout()" -->
         DESCONECTARSE</ion-button>
     </ion-title>
   </ion-toolbar>
 </ion-header>
-
+<!-- <div><h1> X : {{x}}</h1></div>
+<div><h1> Y : {{y}}</h1></div>
+<div><h1> Z : {{z}}</h1></div>
+<div> <h1>  TimeSpamp: {{timeSpam}}</h1></div>
+<button ion-button full (click)="start()" > Start</button>
+<button ion-button full (click)="stop()"> Stop</button> -->
 <ion-content>
   <div class="divSwitch">
       <div class="switch">
-          <input type="checkbox" name="toggle">
+          <input  (click)="activarAlarma(encendido)" type="checkbox" name="toggle">
           <label for="toggle">
             <i class="bulb">
               <span class="bulb-center"></span>

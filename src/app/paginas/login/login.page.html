@@ -4,15 +4,15 @@
 
     <div id="formContainer" [class.flipped]="this.classApplied">
       <form id="login" method="post" action="./">
-        <a style="cursor: pointer" id="flipToRecover" class="flipLink" (click)="flip()">Forgot?</a>
-        <input type="text" name="loginEmail" id="loginEmail" value="Email" />
-        <input type="password" name="loginPass" id="loginPass" value="pass" />
+        <a style="cursor: pointer" id="flipToRecover" class="flipLink" (click)="flip()">Registro</a>
+        <input type="text" name="loginEmail" id="loginEmail" value="admin@admin.com" />
+        <input type="password" name="loginPass" id="loginPass" value="1111" />
         <input type="submit" name="submit" value="Entrar"[routerLink]="('/home')" />
       </form>
       <form id="recover" method="post" action="./">
-        <a style="cursor: pointer" id="flipToLogin" class="flipLink" (click)="flip()">Forgot?</a>
-        <input type="text" name="loginEmail" id="loginEmail" value="Email" />
-        <input type="password" name="loginPass" id="loginPass" value="pass" />
+        <a style="cursor: pointer" id="flipToLogin" class="flipLink" (click)="flip()">Iniciar Sesión</a>
+        <input type="text" name="loginEmail" id="loginEmail" value="Correo" />
+        <input type="password" name="loginPass" id="loginPass" value="" />
         <input type="submit" name="submit" value="Recover" [routerLink]="('/home')"/>
       </form>
     </div>
